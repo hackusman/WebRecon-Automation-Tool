@@ -18,7 +18,6 @@ WebRecon-Automation-Tool est un script Bash conçu pour automatiser les tâches 
 - 📬 Scan des domaines de messagerie (SMTP, POP3, IMAP)
 - ⚙️ Mode **full automation** : exécute toutes les étapes en une seule commande
 
----
 
 ## 📦 Prérequis
 
@@ -36,35 +35,24 @@ go install github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
 
 Et assure-toi d’avoir un fichier `screeenshot.py` valide dans le répertoire `/home/kali/CUBeeSEC/`.
 
----
 
 ## 🚀 Utilisation
 
 1. Cloner le dépôt :
 
-
 git clone https://github.com/hackusman/WebRecon-Automation-Tool.git
 cd WebRecon-Automation-Tool
 
-
 2. Rendre le script exécutable :
-
 chmod +x recon.sh
 
-
 3. Lancer le script :
-
 ./recon.sh
-<<<<<<< HEAD
-=======
-```
 
-4. **Suivre les instructions à l’écran** :
-
+4. Suivre les instructions à l’écran :
    * Choisir le type de cible (URL ou domaine)
    * Sélectionner les modules à exécuter (ou tout lancer)
 
----
 
 ## 📁 Arborescence des résultats
 
@@ -84,10 +72,7 @@ chmod +x recon.sh
 │   └── <subdomain>.txt
 ├── mail_open_result.txt
 └── mail_subdomains.txt
-```
->>>>>>> d368005cfc8947c5e765b72023ad923052060b55
 
----
 
 ## ⚠️ Avertissement légal
 
