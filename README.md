@@ -55,6 +55,37 @@ chmod +x recon.sh
 3. Lancer le script :
 
 ./recon.sh
+<<<<<<< HEAD
+=======
+```
+
+4. **Suivre les instructions à l’écran** :
+
+   * Choisir le type de cible (URL ou domaine)
+   * Sélectionner les modules à exécuter (ou tout lancer)
+
+---
+
+## 📁 Arborescence des résultats
+
+.
+├── Active_Subdomains.txt
+├── collect_subdomain.txt
+├── subdomain.txt
+├── waybackurls/
+│   └── <subdomain>.txt
+├── katana/
+│   └── <subdomain>.txt
+├── nuclei/
+│   └── output.txt
+├── nmap/
+│   └── results.txt
+├── nikto/
+│   └── <subdomain>.txt
+├── mail_open_result.txt
+└── mail_subdomains.txt
+```
+>>>>>>> d368005cfc8947c5e765b72023ad923052060b55
 
 ---
 
