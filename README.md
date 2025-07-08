@@ -3,7 +3,7 @@
 
 ### Description
 
-**WebRecon-Automation-Tool** est un script Bash conçu pour automatiser les tâches courantes de **reconnaissance offensive** lors des phases de pentest ou de bug bounty. Il combine plusieurs outils puissants pour cartographier et analyser une cible (URL ou domaine) de manière rapide et efficace.
+WebRecon-Automation-Tool est un script Bash conçu pour automatiser les tâches courantes de reconnaissance offensive lors des phases de pentest ou de bug bounty. Il combine plusieurs outils puissants pour cartographier et analyser une cible (URL ou domaine) de manière rapide et efficace.
 
 
 ## 🧰 Fonctionnalités principales
@@ -69,7 +69,6 @@ chmod +x recon.sh
 
 ## 📁 Arborescence des résultats
 
-```bash
 .
 ├── Active_Subdomains.txt
 ├── collect_subdomain.txt
