@@ -43,19 +43,20 @@ Avant d’exécuter le script, installe les dépendances suivantes :
 
 sudo apt update && sudo apt install -y nmap nikto python3
 
-go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
-go install github.com/tomnomnom/assetfinder@latest
-go install github.com/OWASP/Amass/v3/...@latest
-go install github.com/tomnomnom/waybackurls@latest
-go install github.com/projectdiscovery/httpx/cmd/httpx@latest
-go install github.com/projectdiscovery/katana/cmd/katana@latest
-go install github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
+- go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 
-Assure-toi aussi d’avoir un script valide :
+- go install github.com/tomnomnom/assetfinder@latest
 
-/home/kali/CUBeeSEC/screeenshot.py
+- go install github.com/OWASP/Amass/v3/...@latest
 
-(utilisé pour la capture automatique).
+- go install github.com/tomnomnom/waybackurls@latest
+
+- go install github.com/projectdiscovery/httpx/cmd/httpx@latest
+
+- go install github.com/projectdiscovery/katana/cmd/katana@latest
+
+- go install github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
+
 
 ---
 
