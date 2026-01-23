@@ -1,29 +1,48 @@
-````markdown
-# 🔎 WebRecon-Automation-Tool
+🔎 WebRecon-Automation-Tool
 
-### Description
+WebRecon-Automation-Tool est un script Bash conçu pour automatiser les phases de reconnaissance offensive en pentest et bug bounty.
+Il centralise plusieurs outils populaires afin de cartographier rapidement une cible (domaine ou URL) et d’identifier sa surface d’attaque.
 
-WebRecon-Automation-Tool est un script Bash conçu pour automatiser les tâches courantes de reconnaissance offensive lors des phases de pentest ou de bug bounty. Il combine plusieurs outils puissants pour cartographier et analyser une cible (URL ou domaine) de manière rapide et efficace.
+«🎯 Objectif : gagner du temps, structurer la recon et éviter les oublis lors des phases initiales d’un audit.»
 
+---
 
-## 🧰 Fonctionnalités principales
+✨ Fonctionnalités
 
-- 🔍 Découverte de sous-domaines (`subfinder`, `assetfinder`, `findomain`, `httpx`)
-- 🧭 Crawling de sites web (`katana`)
-- 🌐 Récupération d'URLs historiques (`waybackurls`)
-- 🚨 Scan de vulnérabilités (`nuclei`)
-- 📡 Scan de ports et services (`nmap`)
-- 🛡️ Scan applicatif (`nikto`)
-- 📸 Capture d’écrans automatiques
-- 📬 Scan des domaines de messagerie (SMTP, POP3, IMAP)
-- ⚙️ Mode **full automation** : exécute toutes les étapes en une seule commande
+- 🔍 Découverte de sous-domaines
+("subfinder", "assetfinder", "findomain", "httpx")
 
+- 🧭 Crawling web
+("katana")
 
-## 📦 Prérequis
+- 🌐 Récupération d’URLs historiques
+("waybackurls")
 
-Avant d'exécuter le script, installe les outils suivants :
+- 🚨 Scan de vulnérabilités
+("nuclei")
 
-sudo apt install -y nmap nikto python3
+- 📡 Scan de ports & services
+("nmap")
+
+- 🛡️ Scan applicatif
+("nikto")
+
+- 📸 Capture automatique de screenshots
+
+- 📬 Scan des services mail
+(SMTP, POP3, IMAP)
+
+- ⚙️ Mode Full Automation
+→ Lance toute la chaîne de reconnaissance en une seule commande.
+
+---
+
+📦 Prérequis
+
+Avant d’exécuter le script, installe les dépendances suivantes :
+
+sudo apt update && sudo apt install -y nmap nikto python3
+
 go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 go install github.com/tomnomnom/assetfinder@latest
 go install github.com/OWASP/Amass/v3/...@latest
@@ -32,29 +51,37 @@ go install github.com/projectdiscovery/httpx/cmd/httpx@latest
 go install github.com/projectdiscovery/katana/cmd/katana@latest
 go install github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
 
+Assure-toi aussi d’avoir un script valide :
 
-Et assure-toi d’avoir un fichier `screeenshot.py` valide dans le répertoire `/home/kali/CUBeeSEC/`.
+/home/kali/CUBeeSEC/screeenshot.py
 
+(utilisé pour la capture automatique).
 
-## 🚀 Utilisation
+---
 
-1. Cloner le dépôt :
+🚀 Installation
 
 git clone https://github.com/hackusman/WebRecon-Automation-Tool.git
 cd WebRecon-Automation-Tool
-
-2. Rendre le script exécutable :
 chmod +x recon.sh
 
-3. Lancer le script :
+---
+
+▶️ Utilisation
+
 ./recon.sh
 
-4. Suivre les instructions à l’écran :
-   * Choisir le type de cible (URL ou domaine)
-   * Sélectionner les modules à exécuter (ou tout lancer)
+Puis :
 
+- Choisir le type de cible : URL ou domaine
+- Sélectionner les modules à lancer
+- Ou utiliser le mode Full Automation
 
-## 📁 Arborescence des résultats
+Le script se charge ensuite d’exécuter toute la chaîne de reconnaissance.
+
+---
+
+📁 Structure des résultats
 
 .
 ├── Active_Subdomains.txt
@@ -73,7 +100,35 @@ chmod +x recon.sh
 ├── mail_open_result.txt
 └── mail_subdomains.txt
 
+Chaque dossier contient les résultats organisés par module.
 
-## ⚠️ Avertissement légal
+---
 
-> Ce script est destiné exclusivement à des fins éducatives et de test sur des cibles dont vous avez l’autorisation explicite. L’utilisation sur des systèmes non autorisés est illégale et répréhensible.
+⚠️ Avertissement légal
+
+Ce projet est fourni uniquement à des fins éducatives et professionnelles.
+
+«❗ N’utilisez cet outil que sur des systèmes pour lesquels vous avez une autorisation explicite.
+Toute utilisation illégale ou non autorisée est strictement interdite et relève de votre responsabilité.»
+
+---
+
+👨‍💻 Auteur
+
+A2K (hackus_man)
+Web Pentester - Bug Hunter
+
+GitHub : https://github.com/hackusman
+
+---
+
+⭐ Contribution
+
+Les contributions sont les bienvenues :
+
+- Améliorations
+- Nouveaux modules
+- Optimisations
+- Corrections
+
+Fork → Commit → Pull Request 🚀
