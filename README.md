@@ -62,9 +62,11 @@ sudo apt update && sudo apt install -y nmap nikto python3
 
 🚀 Installation
 
-git clone https://github.com/hackusman/WebRecon-Automation-Tool.git
-cd WebRecon-Automation-Tool
-chmod +x recon.sh
+1. git clone https://github.com/hackusman/WebRecon-Automation-Tool.git
+
+2. cd WebRecon-Automation-Tool
+
+3. chmod +x recon.sh
 
 ---
 
