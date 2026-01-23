@@ -82,29 +82,6 @@ Le script se charge ensuite d’exécuter toute la chaîne de reconnaissance.
 
 ---
 
-📁 Structure des résultats
-
-.
-├── Active_Subdomains.txt
-├── collect_subdomain.txt
-├── subdomain.txt
-├── waybackurls/
-│   └── <subdomain>.txt
-├── katana/
-│   └── <subdomain>.txt
-├── nuclei/
-│   └── output.txt
-├── nmap/
-│   └── results.txt
-├── nikto/
-│   └── <subdomain>.txt
-├── mail_open_result.txt
-└── mail_subdomains.txt
-
-Chaque dossier contient les résultats organisés par module.
-
----
-
 ⚠️ Avertissement légal
 
 Ce projet est fourni uniquement à des fins éducatives et professionnelles.
